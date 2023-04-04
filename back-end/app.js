@@ -26,7 +26,10 @@ app.use('/users', usersRouter);
  * ROTAS 
  */
 
-const customerRouter = require('./routes/customers')
-app.use('/customers', customerRouter)
+const customersRouter = require('./routes/customers')
+app.use('/customers', customersRouter)
+
+const salesRouter = require('./routes/sales')
+app.use('/sales', salesRouter)
 
 module.exports = app;
