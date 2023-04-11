@@ -4,15 +4,15 @@ const schema = mongoose.Schema({
   datetime: {
     type: Date,
     required: true,
-    default: Date.now() // Data/hora da gravação
+    default: Date.now()   // Data/hora da gravação
   },
   number: {
     type: Number,
     required: true
   },
   customer: {
-    type: mongoose.ObjectId, // Tipo para chave estrangeira
-    ref: 'Customer',         // Model estrangeiro
+    type: mongoose.ObjectId,  // Tipo para chave estrangeira
+    ref: 'Customer',          // Model estrangeiro
     required: true
   }
 })
